@@ -90,11 +90,13 @@ module.exports = {
             }
             return resolve({
               status: 200,
-              token,
-              id: payload.id,
-              username: payload.username,
-              email: body.email,
-              roles: payload.roles,
+              result: {
+                token,
+                id: payload.id,
+                username: payload.username,
+                email: body.email,
+                roles: payload.roles,
+              },
             });
           });
         });

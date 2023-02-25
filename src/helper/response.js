@@ -4,7 +4,7 @@ module.exports = {
       status,
       meta: result.meta || null,
       msg: result.message,
-      data: result || null,
+      data: result.result || null,
     };
     res.status(status).json(results);
   },
