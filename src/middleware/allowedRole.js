@@ -11,8 +11,8 @@ module.exports = (...allowedRole) => {
     }
     if (!isAllowed) {
       return sendResponse.error(res, 403, {
-        msg: "Forbidden",
-        error: "You don't have the right to do that",
+        message: "Forbidden",
+        err: "You don't have the right to do that",
       });
     }
     next();
