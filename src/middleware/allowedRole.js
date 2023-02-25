@@ -5,7 +5,7 @@ module.exports = (...allowedRole) => {
     const payload = req.userPayload;
     let isAllowed = false;
     for (let roles of allowedRole) {
-      if (roles !== payload.role) continue;
+      if (roles !== payload.roles) continue;
       isAllowed = true;
       break;
     }
