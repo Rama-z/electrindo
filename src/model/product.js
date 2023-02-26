@@ -109,6 +109,7 @@ module.exports = {
   },
   createProduct: (body) => {
     return new Promise((resolve, reject) => {
+      console.log("create");
       const queryGetUniqId = "select uniq_id from products where uniq_id = $1";
       const query =
         "insert into products (uniq_id, product_name, product_price, brand, product_image_url, product_info, real_pdp_url) values ($1, $2, $3, $4, $5, $6, $7) returning *";
@@ -125,7 +126,7 @@ module.exports = {
         if (errs) {
           console.log(errs);
           return reject({
-            status: 501,
+            status: 502,
             message: "Internal server error",
             errs,
           });
