@@ -49,11 +49,10 @@ module.exports = {
       products.map((product) => {
         return new Promise((resolve, reject) => {
           const query =
-            "insert into transaction_item (transaction_id, product_id, product_name, quantity, subtotal) values ($1, $2, $3, $4, $5) returning *";
+            "insert into transaction_item (transaction_id, product_id, quantity, subtotal) values ($1, $2, $3, $4, $5) returning *";
           const values = [
             transactionId,
             product.product_id,
-            product.name,
             product.quantity,
             product.subtotal,
           ];
