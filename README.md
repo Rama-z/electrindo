@@ -1,4 +1,4 @@
-# GRASBERG COFFEE BACKEND
+# BLEND MEDIA BACKEND
 
 Codebase containing CRUD and auth to provide client side for our [project](##Related)
 
