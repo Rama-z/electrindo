@@ -59,9 +59,9 @@ $ npm install
 - Product
   - Get Product
   - Get Product Detail
-  - Edit Product
-  - Update Product
-  - Delete Product
+  - Edit Product(Admin)
+  - Update Product(Admin)
+  - Delete Product(Admin)
 - Users
   - Get Profile
   - Update Profile
