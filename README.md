@@ -17,13 +17,13 @@ Codebase containing CRUD and auth to provide client side for our [project](##Rel
 Clone this repository by run the following code:
 
 ```
-$ git clone https://github.com/Rama-z/Grasberg-Coffee-Project-V1
+$ git clone https://github.com/Rama-z/blend-media
 ```
 
 ## 2. Go to directory
 
 ```
-$ cd Grasberg-Coffee-Project-V1
+$ cd blend-media
 ```
 
 ## 3. Install dependency packages
@@ -39,40 +39,38 @@ $ npm install
 - `index.js` - The entry point to our application. This file defines our express server and connects it to posgreSQL
 - `config/` - This folder contains configuration for passport as well as a central location for configuration/environment variables.
 - `routes/` - This folder contains the route definitions for our API.
-- `repo/` - This folder contains the schema definitions for our sql models.
+- `model/` - This folder contains the schema definitions for our sql models.
 - `controller/` - This folder contains the schema definitions for unctions that separate out the code to route requests from the code that actually processes requests.
+- `views/` - This folder contains a component that responsible for presenting data to the user and handling user interactions
 - `middleware/` - This folder contains the schema definitions for middleware.
 - `helper/` - This folder contains helper functions to make our code much easier to read
 - `public/` - This folder contains uploaded data to our API
 
 ## Documentation
 
-[Documentation](https://bit.ly/3it3CwK)
+[Documentation](https://dark-rocket-410442.postman.co/documentation/23707258-5309d7d3-2d8c-465b-8cc0-e38971d9f6e7/publish?workspaceId=7b0956d0-bbf3-4801-8ca8-3291b3456684)
 
 ## Features
 
 - Auth
-  - login
-  - logout
+  - Register
+  - Login
+  - Logout
 - Product
   - Get Product
-  - Edit
-  - Delete
-  - Update
+  - Get Product Detail
+  - Edit Product
+  - Update Product
+  - Delete Product
 - Users
-  - Register
-  - Edit password
-  - Update profile
+  - Get Profile
+  - Update Profile
+  - Get All User(Admin)
+  - Ban User(Admin)
 - Transactions
-  - Get transaction history
   - Create transaction
-  - Edit transaction
+  - Get transaction History
   - Delete transactions
-- Promos
-  - Get Promos
-  - Create
-  - Update
-  - Delete
 
 ## API Reference Example
 
@@ -85,11 +83,11 @@ $ npm install
 ```
 
 ```http
-  GET, POST, UPDATE /transasction
+  GET, POST /transaction
 ```
 
 ```http
-  DELETE /transasction/${id}
+  DELETE /transaction/${id}
 ```
 
 ## Authors
